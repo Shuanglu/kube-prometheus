@@ -21,6 +21,7 @@ spec:
   image: quay.io/prometheus/prometheus:v2.30.0
   nodeSelector:
     kubernetes.io/os: linux
+    project: ob
   podMetadata:
     labels:
       app.kubernetes.io/component: prometheus
