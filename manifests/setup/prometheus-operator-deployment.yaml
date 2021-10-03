@@ -6,6 +6,7 @@ metadata:
     app.kubernetes.io/name: prometheus-operator
     app.kubernetes.io/part-of: kube-prometheus
     app.kubernetes.io/version: 0.51.1
+    project: ob
   name: prometheus-operator
   namespace: monitoring
 spec:
@@ -15,6 +16,7 @@ spec:
       app.kubernetes.io/component: controller
       app.kubernetes.io/name: prometheus-operator
       app.kubernetes.io/part-of: kube-prometheus
+      project: ob
   template:
     metadata:
       annotations:
@@ -24,6 +26,7 @@ spec:
         app.kubernetes.io/name: prometheus-operator
         app.kubernetes.io/part-of: kube-prometheus
         app.kubernetes.io/version: 0.51.1
+        project: ob
     spec:
       containers:
       - args:
@@ -66,6 +69,7 @@ spec:
           runAsUser: 65532
       nodeSelector:
         kubernetes.io/os: linux
+        project: ob
       securityContext:
         runAsNonRoot: true
         runAsUser: 65534
