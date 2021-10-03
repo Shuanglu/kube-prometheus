@@ -62,6 +62,7 @@ spec:
           readOnly: false
       nodeSelector:
         kubernetes.io/os: linux
+        project: ob
       serviceAccountName: prometheus-adapter
       volumes:
       - emptyDir: {}
