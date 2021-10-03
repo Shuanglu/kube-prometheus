@@ -16,6 +16,7 @@ spec:
       app.kubernetes.io/component: metrics-adapter
       app.kubernetes.io/name: prometheus-adapter
       app.kubernetes.io/part-of: kube-prometheus
+      project: ob
   strategy:
     rollingUpdate:
       maxSurge: 1
