@@ -6,6 +6,7 @@ metadata:
     app.kubernetes.io/name: grafana
     app.kubernetes.io/part-of: kube-prometheus
     app.kubernetes.io/version: 8.1.5
+    project: ob
   name: grafana
   namespace: monitoring
 spec:
@@ -15,6 +16,7 @@ spec:
       app.kubernetes.io/component: grafana
       app.kubernetes.io/name: grafana
       app.kubernetes.io/part-of: kube-prometheus
+      project: ob
   template:
     metadata:
       annotations:
@@ -26,6 +28,7 @@ spec:
         app.kubernetes.io/name: grafana
         app.kubernetes.io/part-of: kube-prometheus
         app.kubernetes.io/version: 8.1.5
+        project: ob
     spec:
       containers:
       - env: []
