@@ -6,6 +6,7 @@ metadata:
     app.kubernetes.io/name: kube-state-metrics
     app.kubernetes.io/part-of: kube-prometheus
     app.kubernetes.io/version: 2.2.1
+    project: ob
   name: kube-state-metrics
   namespace: monitoring
 spec:
@@ -15,6 +16,7 @@ spec:
       app.kubernetes.io/component: exporter
       app.kubernetes.io/name: kube-state-metrics
       app.kubernetes.io/part-of: kube-prometheus
+      project: ob
   template:
     metadata:
       annotations:
@@ -24,6 +26,7 @@ spec:
         app.kubernetes.io/name: kube-state-metrics
         app.kubernetes.io/part-of: kube-prometheus
         app.kubernetes.io/version: 2.2.1
+        project: ob
     spec:
       containers:
       - args:
