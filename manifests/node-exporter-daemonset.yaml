@@ -15,6 +15,7 @@ spec:
       app.kubernetes.io/component: exporter
       app.kubernetes.io/name: node-exporter
       app.kubernetes.io/part-of: kube-prometheus
+      project: ob
   template:
     metadata:
       labels:
