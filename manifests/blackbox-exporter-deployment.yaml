@@ -95,6 +95,7 @@ spec:
           runAsUser: 65532
       nodeSelector:
         kubernetes.io/os: linux
+        project: ob
       serviceAccountName: blackbox-exporter
       volumes:
       - configMap:
