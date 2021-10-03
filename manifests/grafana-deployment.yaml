@@ -132,6 +132,7 @@ spec:
           readOnly: false
       nodeSelector:
         kubernetes.io/os: linux
+        project: ob
       securityContext:
         fsGroup: 65534
         runAsNonRoot: true
